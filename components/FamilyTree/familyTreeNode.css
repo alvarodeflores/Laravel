@@ -1,0 +1,132 @@
+.familyTreeNode {
+  width: auto;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  min-width: 160px;
+  background-color: #fff;
+}
+
+.familyTreeNode__middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.familyTreeNode .btn-expand {
+  background-color: transparent;
+  min-width: 1px;
+  margin: 0;
+  padding: 0 5px;
+  height: auto;
+  transition: all 0.2s ease-in-out;
+}
+
+.familyTreeNode .btn-expand:not(:disabled):hover {
+  transform: scale(2);
+  z-index: 100;
+}
+
+.btn-expand span {
+  font-size: 0.6rem;
+  color: rgb(56, 161, 105);
+}
+
+.btn-expand--hoz {
+  flex-direction: row;
+  align-items: center;
+}
+
+.btn-expand--vet {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.expand-action {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.persona {
+  text-align: center;
+  background-color: rgba(56, 161, 105, 0.05);
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 0 1rem rgba(56, 161, 105, 0.05);
+}
+
+.persona__detail > h3 {
+  font-size: 0.9rem;
+}
+
+.persona__detail > p {
+  font-size: 0.7rem;
+  line-height: 1;
+}
+
+.react-flow__node.selected .familyTreeNode {
+  border-color: rgb(56, 161, 105);
+}
+
+.react-flow__handle {
+  width: 0;
+  height: 0;
+  border-radius: 0;
+  background: transparent !important;
+}
+
+.react-flow__handle-top {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid rgb(56, 161, 105);
+  top: -10px;
+}
+
+.react-flow__handle-bottom {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgb(56, 161, 105);
+  bottom: -10px;
+}
+
+.react-flow__handle-right {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid rgb(56, 161, 105);
+  right: -10px;
+}
+
+.react-flow__handle-left {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid rgb(56, 161, 105);
+  left: -10px;
+}
+
+.selectedNode {
+  border: 2px solid rgb(56, 161, 105);
+}
+
+.react-flow__controls {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  box-shadow: none;
+}
+
+.react-flow__controls-button {
+  width: auto;
+  height: 36px;
+  padding: 0;
+}
+
+.react-flow__controls-button svg {
+  max-width: 18px;
+  max-height: 18px;
+  fill: #2c7a7b;
+}
