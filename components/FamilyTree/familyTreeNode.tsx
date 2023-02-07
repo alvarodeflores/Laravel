@@ -130,7 +130,7 @@ export const FamilyTreeNode = memo((props: IFamilyTreeNode) => {
         setIsRightSibling(false);
       }
     }
-  }, [props.targetPosition]);
+  }, []);
 
   return (
     <>
