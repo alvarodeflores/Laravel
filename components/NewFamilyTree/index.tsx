@@ -30,9 +30,9 @@ const NewFamilyTree = () => {
   const navigator = useNavigate();
 
   return (
-    <Box my="1rem">
+    <Box my={2}>
       <Card title="Create New Family Tree">
-        <Text mb="1rem">Please Enter new Family Tree name</Text>
+        <Text mb={2}>Please Enter new Family Tree name</Text>
         <Formik
           validateOnChange={true}
           initialValues={{
@@ -68,7 +68,7 @@ const NewFamilyTree = () => {
         >
           {({ errors, touched, isSubmitting }) => (
             <Form>
-              <FormControl my="0.5rem">
+              <FormControl my={1}>
                 <FormLabel fontSize="0.9rem" color="gray">
                   Family Tree Name
                 </FormLabel>
@@ -77,7 +77,7 @@ const NewFamilyTree = () => {
                   <FormHelperText color="red.400">{errors.name}</FormHelperText>
                 ) : null}
               </FormControl>
-              <FormControl my="0.5rem">
+              <FormControl my={1}>
                 <FormLabel fontSize="0.9rem" color="gray">
                   Description
                 </FormLabel>
@@ -87,7 +87,7 @@ const NewFamilyTree = () => {
                   placeholder="Description"
                 />
               </FormControl>
-              <Box my="1rem" textAlign="left">
+              <Box my={2} textAlign="left">
                 <Button
                   isLoading={isSubmitting}
                   type="submit"
