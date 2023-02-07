@@ -29,7 +29,9 @@ const Upload: React.FC<any> = () => {
       }
     );
   };
+
   const { getRootProps, getInputProps } = useDropzone({ onDrop });
+
   return (
     <Box my="1rem">
       <Card title="Upload Gedcom">

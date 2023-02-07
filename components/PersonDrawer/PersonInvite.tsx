@@ -21,7 +21,8 @@ export const PersonInviteForm = () => {
       </Box>
 
       <SubmitButton type="submit" width="100%">
-        <Send/>&nbsp;&nbsp;Send Invite
+        <Send />
+        &nbsp;&nbsp;Send Invite
       </SubmitButton>
     </Form>
   );
