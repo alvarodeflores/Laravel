@@ -21,7 +21,7 @@ const LoginCard = () => {
   const authMutation = useUserAuth();
 
   return (
-    <Box my="1rem">
+    <Box my={2}>
       <Card title="Login">
         <Formik
           validateOnChange={true}
@@ -39,7 +39,7 @@ const LoginCard = () => {
         >
           {({ errors, touched, values }) => (
             <Form>
-              <FormControl my="0.5rem">
+              <FormControl my={1}>
                 <FormLabel>UserName</FormLabel>
                 <Field
                   as={Input}
@@ -53,7 +53,7 @@ const LoginCard = () => {
                   </FormHelperText>
                 ) : null}
               </FormControl>
-              <FormControl my="0.5rem">
+              <FormControl my={1}>
                 <FormLabel>Password</FormLabel>
 
                 <Field
